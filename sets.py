@@ -5,3 +5,7 @@ print(a_set)
 
 val = {x for x in 'hallo' if x not in 'll'}
 print(val)
+
+
+a_dict = { 'target': 12, 'non-target': 10, 'target': 9 }
+print(a_dict)
