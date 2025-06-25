@@ -5,8 +5,20 @@ def remove_suffix_ness(word):
 
         return print((word[:-5] + 'y'))
     
-    return print((word[:4]))
+    return print((word[:-4]))
 
 
-for data in input_data:
-    remove_suffix_ness(data)
+# # for data in input_data:
+# #     remove_suffix_ness(data)
+
+any_sentence = "I need to make that dark bright."
+
+def adjective_to_verb(sentence, index): 
+    word_to_verb = sentence.split()[index]
+    if word_to_verb[-1] == '.':
+        word_to_verb = word_to_verb.replace('.','en.')
+        return word_to_verb
+    word_to_verb = word_to_verb + 'en'
+    return word_to_verb
+
+print(adjective_to_verb(any_sentence, -2))
