@@ -25,3 +25,18 @@ print(list(fcb)) # ['nombre', 'pais', 'fundacion', 'entrenador', 'estadio', 'tit
 
 print(fcb['nombre'])
 
+
+new_dict = dict([('halo', 'hola'), ('wilkommen', 'bienvenido')])
+
+print(new_dict)#o: {'halo': 'hola', 'wilkommen': 'bienvenido'}
+
+other_dict = {i: i + '!' for i in new_dict}
+print(other_dict)
+
+grts = dict(hallo='hola', willkomen='bienvenido' )
+print(grts)
+
+telefonnummeer = dict(mikel=2321020333, nico=2324078967)
+print(telefonnummeer)
+
+

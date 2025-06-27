@@ -1,24 +1,19 @@
-input_data = ['heaviness', 'sadness', 'softness', 'crabbiness', 'lightness', 'artiness', 'edginess']
 
-def remove_suffix_ness(word):
-    if word[-5] == 'i':
+rounds_table = [1,2,3]
+rounds_table_two = [5,6,7]
 
-        return print((word[:-5] + 'y'))
-    
-    return print((word[:-4]))
+def concatenate_rounds(rounds, other_rounds):
+    rounds.extend(other_rounds)
+    return rounds
 
+def list_contains_round(rounds, number):
+    if number in rounds:
+        return True
+    return False
 
-# # for data in input_data:
-# #     remove_suffix_ness(data)
+def card_average(hand):
+    result = sum(hand)
+    result = result / len(hand)
+    return result
 
-any_sentence = "I need to make that dark bright."
-
-def adjective_to_verb(sentence, index): 
-    word_to_verb = sentence.split()[index]
-    if word_to_verb[-1] == '.':
-        word_to_verb = word_to_verb.replace('.','en.')
-        return word_to_verb
-    word_to_verb = word_to_verb + 'en'
-    return word_to_verb
-
-print(adjective_to_verb(any_sentence, -2))
+print(card_average(rounds_table))
