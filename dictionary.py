@@ -31,3 +31,12 @@ for i  in reversed(numm):
         drei
         vier
     """    
+
+print(i)
+
+items = ['apple', 'apple', 'apple', 'avocado', 'milk']
+
+undup = set(items)
+
+print(undup)
+#Output: {'milk', 'apple', 'avocado'}
