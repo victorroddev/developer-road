@@ -1,9 +1,6 @@
 
-const x = 10;
-const y = 2;
 
-const z = x * y;
+const nameP = "Frenkie De Jong";
+const regex = /[A-Z]/g;
 
-console.log(`el resultado de ${x} por ${y} es igual a: ${z}.`)
-
-console.log("dos por diez = " + (x * y)); //dos por diez = 20
+console.log(nameP.match(regex));//Output: [ 'F', 'D', 'J' ]
